@@ -25,9 +25,9 @@ Yesterday, you learned how to pass information from a parent component into a ch
 
 #### Execute
 
-- Be able to pass functions from a parent component to a child component
-- Understand the spread operator
-- Understand `.map` and how to use it to render data in a React application
+- Be able to pass functions from a parent component to a child component.
+- Understand the spread operator.
+- Understand `.map` and how to use it to render data in a React application.
 
 ## Notes
 
@@ -39,7 +39,7 @@ Yesterday, you learned how to pass information from a parent component into a ch
 
 1. Allowing the child component to update the state in the parent component:
 
-  - Step 1. send a function into the child component that updates the state in the parent component
+- Step 1. send a function into the child component that updates the state in the parent component
 
   ```javaScript
   class Parent extends React.Component {
@@ -60,7 +60,8 @@ Yesterday, you learned how to pass information from a parent component into a ch
   }
   ```
 
-  - Step 2. invoke that function from the props in the child component
+- Step 2. invoke that function from the props in the child component
+
   ```javaScript
   class Child extends React.Component {
     constructor(props){
