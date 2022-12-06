@@ -1,0 +1,14 @@
+[
+  {
+    "name": "pikachu",
+    "type": "electric"
+  },
+  {
+    "name": "bulbasaur",
+    "type": "grass"
+  },
+  {
+    "name": "charmander",
+    "type": "fire"
+  }
+]
