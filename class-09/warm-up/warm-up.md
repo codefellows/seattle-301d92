@@ -1,22 +1,42 @@
 # Warm-Up Exercise
-This code sample is written in Python. Read through the code and determine the output for this function.
 
-```
-def search(source: list, key: int) -> int:
-    start = 0
-    end = len(source) - 1
+## Overview
 
-    while abs(start - end) > 1:
-        mid = abs(start + end) // 2
+Create a `<Request>` component in React!
 
-        if key == source[mid]:
-            return mid
+Use your knowledge of React to create a component that takes in 2 props:
 
-        if key > source[mid]:
-            start = mid + 1
+- `url`
+- `method`
 
-        if key < source[mid]:
-            end = mid - 1
+the component should make a Web Request using axios, and displays the results in the render method.  Use the following code to get you started:
 
-    return -1
+Here is a [Code Sandbox link](https://codesandbox.io/s/class-09-warm-up-nbcfg7?file=/src/Request.jsx
+) if you want to get straight to code!
+
+```jsx
+import React from 'react';
+
+class Request extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            response: {}
+        }
+    }
+
+    componentDidMount = () => {
+        console.log(this.props);
+    }
+
+    render() {
+        return (
+            <div>
+                <h2>Response</h2>
+                {/** Display Results here */}
+            </div>
+        )
+    }
+}
+
 ```
