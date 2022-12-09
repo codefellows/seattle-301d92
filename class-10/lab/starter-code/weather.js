@@ -4,7 +4,7 @@ const axios = require('axios');
 let cache = {};
 
 async function getWeather(lat, lon) {
-  const key = `${lat}${lon}`; // create a key to store into the cache object
+  const key = `${lat}:${lon}`; // create a key to store into the cache object
   const url = `http://api.weatherbit.io/v2.0/forecast/daily/?key=${WEATHER_API_KEY}&lang=en&lat=${lat}&lon=${lon}&days=5`;
 
   if (cache[key] && (Date.now() - cache[key].timestamp < 50000)) { // is the timestamp on the cache data within 50 seconds from now.
